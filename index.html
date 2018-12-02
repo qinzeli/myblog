@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="favicon.png">
+  
+  
+    <link href="fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小覃酱</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-FIRST" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/03/FIRST/" class="article-date">
+  <time datetime="2018-12-02T16:12:11.884Z" itemprop="datePublished">2018-12-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/03/FIRST/">leaflet API</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="构造器"><a href="#构造器" class="headerlink" title="构造器"></a>构造器</h3><h3 id="构造器-使用-描述"><a href="#构造器-使用-描述" class="headerlink" title="构造器    使用    描述"></a>构造器    使用    描述</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">L.Map( &lt;HTMLElement|String&gt; id, &lt;Map options&gt; options? )	new L.Map(…)</span><br><span class="line">L.map(…)	通过div元素和带有地图选项的描述的文字对象来实例化一个地图对象，其中文字对象是可选的。</span><br><span class="line">Options</span><br><span class="line">Map State Options</span><br></pre></td></tr></table></figure>
+<p>选项    类型    默认值    描述<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">center	LatLng	null	初始化地图的地理中心.</span><br><span class="line">zoom	Number	null	初始化地图的缩放.</span><br><span class="line">layers	ILayer[]	null	初始化后加载到地图上的图层.</span><br><span class="line">minZoom	Number	null	地图的最小视图。可以重写地图图层的minZoom.</span><br><span class="line">maxZoom	Number	null	地图的最大视图。可以重写地图图层的maxZoom.</span><br><span class="line">maxBounds	LatLngBounds	null	当这个选项被设置后，地图被限制在给定的地理边界内，当用户平移将地图拖动到视图以外的范围时会出现弹回的效果， 并且也不允许缩小视图到给定范围以外的区域（这取决于地图的尺寸）。 使用setMaxBounds方法可以动态地设置这种约束.</span><br><span class="line">crs	CRS	L.CRS.</span><br><span class="line">EPSG3857	使用的坐标系，当你不确定坐标系是什么时请不要更改.</span><br><span class="line">Interaction Options</span><br></pre></td></tr></table></figure></p>
+<p>选项    类型    默认值    描述<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dragging	Boolean	<span class="literal">true</span>	决定地图是否可被鼠标或触摸拖动.</span><br><span class="line">touchZoom	Boolean	<span class="literal">true</span>	决定地图是否可被两只手指触摸拖拽缩放.</span><br><span class="line">scrollWheelZoom	Boolean	<span class="literal">true</span>	决定地图是否被被鼠标滚轮滚动缩放.</span><br><span class="line">doubleClickZoom	Boolean	<span class="literal">true</span>	决定地图是否可被双击缩放.</span><br><span class="line">boxZoom	Boolean	<span class="literal">true</span>	决定地图是否可被缩放到鼠标拖拽出的矩形的视图，鼠标拖拽时需要同时按住<span class="built_in">shift</span>键.</span><br><span class="line">tap	Boolean	<span class="literal">true</span>	Enables mobile hacks <span class="keyword">for</span> supporting instant taps (fixing 200ms click delay on iOS/Android) and touch holds (fired as contextmenu events).</span><br><span class="line">tapTolerance	Number	15	The max number of pixels a user can <span class="built_in">shift</span> his finger during touch <span class="keyword">for</span> it to be considered a valid tap.</span><br><span class="line">trackResize	Boolean	<span class="literal">true</span>	确定地图在窗口尺寸改变时是否可以自动处理浏览器以更新视图.</span><br><span class="line">worldCopyJump	Boolean	<span class="literal">false</span>	当这个选项可用时，当你平移地图到其另一个领域时会被地图捕获到，并无缝地跳转到原始的领域以保证所有标注、矢量图层之类的覆盖物仍然可见.</span><br><span class="line">closePopupOnClick	Boolean	<span class="literal">true</span>	当你不想用户点击地图关闭消息弹出框时，请将其设置为<span class="literal">false</span> .</span><br><span class="line">Keyboard Navigation Options</span><br></pre></td></tr></table></figure></p>
+<p>选项    类型    默认值    描述<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">keyboard	Boolean	<span class="literal">true</span>	聚焦到地图且允许用户通过键盘的方向键和+/-键来漫游地图.</span><br><span class="line">keyboardPanOffset	Number	80	确定按键盘方向键时地图平移的像素.</span><br><span class="line">keyboardZoomOffset	Number	1	确定键盘+ or -键对于的缩放级数.</span><br><span class="line">Panning Inertia Options</span><br></pre></td></tr></table></figure></p>
+<p>选项    类型    默认值    描述<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">inertia	Boolean	<span class="literal">true</span>	如果该选项可用，在拖动和在某一时间段内持续朝同一方向移动建有动力的地图时，会有惯性的效果.</span><br><span class="line">inertiaDeceleration	Number	3000	确定惯性移动减速的速率，单位是像素每秒的二次方2.</span><br><span class="line">inertiaMaxSpeed	Number	1500	惯性移动的最大速度，单位是像素每秒.</span><br><span class="line">inertiaThreshold	Number	depends	放开鼠标或是触摸来停止惯性移动与移动停止之间的毫秒数.</span><br><span class="line">Control options</span><br></pre></td></tr></table></figure></p>
+<p>选项    类型    默认值    描述<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zoomControl	Boolean	<span class="literal">true</span>	确定zoom control是否默认加载在地图上 .</span><br><span class="line">attributionControl	Boolean	<span class="literal">true</span>	确定attribution control是否默认加载在地图上.</span><br><span class="line">Animation options</span><br></pre></td></tr></table></figure></p>
+<p>选项    类型    默认值    描述<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fadeAnimation	Boolean	depends	确定瓦片淡出动画是否可用。通常默认在所有浏览器中都支持CSS3转场，android例外.</span><br><span class="line">zoomAnimation	Boolean	depends	确定瓦片缩放动画是否可用。通常默认在所有浏览器中都支持CSS3转场，android例外.</span><br><span class="line">zoomAnimationThreshold	Number	4	Won<span class="string">'t animate zoom if the zoom difference exceeds this value.</span></span><br><span class="line"><span class="string">markerZoomAnimation	Boolean	depends	确定注记的缩放是否随地图缩放动画而播放，如果被禁用，注记在动画中拉长时会消失。通常默认在所有浏览器中都支持CSS3转场，android例外.</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h3><p>You can subscribe to the following events using these methods.</p>
+<p>Event    Data    描述<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">click	MouseEvent	用户点击或触摸地图时触发.</span><br><span class="line">dblclick	MouseEvent	用户双击或连续两次触摸地图时触发.</span><br><span class="line">mousedown	MouseEvent	用户按下鼠标按键时触发.</span><br><span class="line">mouseup	MouseEvent	用户按下鼠标按键时触发.</span><br><span class="line">mouseover	MouseEvent	鼠标进入地图时触发.</span><br><span class="line">mouseout	MouseEvent	鼠标离开地图时触发.</span><br><span class="line">mousemove	MouseEvent	鼠标在地图上移动时触发.</span><br><span class="line">contextmenu	MouseEvent	当用户在地图上按下鼠标右键时触发，如果有监听器在监听这个时间，则浏览器默认的情景菜单被禁用.</span><br><span class="line">focus	Event	当用户在地图上进行标引、点击或移动时进行聚焦.</span><br><span class="line">blur	Event	当地图失去焦点时触发.</span><br><span class="line">preclick	MouseEvent	当鼠标在地图上点击之前触发。有时会在点击鼠标时，并在已存在的点击事件开始处理之前想要某件事情发生时用得到.</span><br><span class="line">load	Event	当地图初始化时触发。（当地图的中心点和缩放初次设置时）.</span><br><span class="line">unload	Event	Fired when the map is destroyed with remove method.</span><br><span class="line">viewreset	Event	当地图需要重绘内容时触发。（通常在地图缩放和载入时发生）这对于创建用户自定义的叠置图层非常有用.</span><br><span class="line">movestart	Event	地图视图开始改变时触发。（比如用户开始拖动地图）.</span><br><span class="line">move	Event	所有的地图视图移动时触发.</span><br><span class="line">moveend	Event	当地图视图结束改变时触发。（比如用户停止拖动地图）.</span><br><span class="line">dragstart	Event	用户开始拖动地图时触发.</span><br><span class="line">drag	Event	用户拖动地图时不断重复地触发.</span><br><span class="line">dragend	Event	用户停止拖动时触发.</span><br><span class="line">zoomstart	Event	当地图缩放即将发生时触发。（比如缩放动作开始前）.</span><br><span class="line">zoomend	Event	当地图缩放时触发.</span><br><span class="line">zoomlevelschange	Event	Fired when the number of zoomlevels on the map is changed due to adding or removing a layer.</span><br><span class="line">resize	ResizeEvent	Fired when the map is resized.</span><br><span class="line">autopanstart	Event	打开弹出窗口时地图开始自动平移时触发.</span><br><span class="line">layeradd	LayerEvent	当一个新的图层添加到地图上时触发.</span><br><span class="line">layerremove	LayerEvent	当一些图层从地图上移除时触发.</span><br><span class="line">baselayerchange	LayerEvent	当通过layer control改变基础图层时触发.</span><br><span class="line">overlayadd	LayerEvent	Fired when an overlay is selected through the layer control.</span><br><span class="line">overlayremove	LayerEvent	Fired when an overlay is deselected through the layer control.</span><br><span class="line">locationfound	LocationEvent	当地理寻址成功时触发（使用locate方法）</span><br><span class="line">locationerror	ErrorEvent	当地理寻址错误时触发（使用locate方法）</span><br><span class="line">popupopen	PopupEvent	当弹出框打开时触发（使用openPopup方法）</span><br><span class="line">popupclose	PopupEvent	当弹出框关闭时触发（使用closePopup方法）</span><br></pre></td></tr></table></figure></p>
+<h3 id="地图状态修改"><a href="#地图状态修改" class="headerlink" title="地图状态修改"></a>地图状态修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">方法	返回值	描述</span><br><span class="line">setView( &lt;LatLng&gt; center, &lt;Number&gt; zoom, &lt;zoom/pan options&gt; options? )	this	设定地图（设定其地理中心和缩放）.</span><br><span class="line">setZoom( &lt;Number&gt; zoom, &lt;zoom options&gt; options? )	this	设定地图的缩放.</span><br><span class="line">zoomIn( &lt;Number&gt; delta?, &lt;zoom options&gt; options? )	this	通过delta变量放大地图的级别，1是delta的默认值.</span><br><span class="line">zoomOut( &lt;Number&gt; delta?, &lt;zoom options&gt; options?)	this	通过delta变量缩小地图的级别，1是delta的默认值.</span><br><span class="line">setZoomAround( &lt;LatLng&gt; latlng, &lt;Number&gt; zoom, &lt;zoom options&gt; options? )	this	Zooms the map <span class="keyword">while</span> keeping a specified point on the map stationary (e.g. used internally <span class="keyword">for</span> scroll zoom and double-click zoom).</span><br><span class="line">fitBounds( &lt;LatLngBounds&gt; bounds, &lt;fitBounds options&gt; options? )	this	将地图视图尽可能大地设定在给定的地理边界内.</span><br><span class="line">fitWorld( &lt;fitBounds options&gt; options? )	this	将地图视图尽可能大地设定在包含全部地域的级别上.</span><br><span class="line">panTo( &lt;LatLng&gt; latlng, &lt;pan options&gt; options? )	this	将地图平移到给定的中心。如果新的中心点在屏幕内与现有的中心点不同则产生平移动作.</span><br><span class="line">panInsideBounds( &lt;LatLngBounds&gt; bounds )	this	平移地图到坐落于给定边界最接近的视图内.</span><br><span class="line">panBy( &lt;Point&gt; point, &lt;pan options&gt; options? )	this	通过给定的像素值对地图进行平移.</span><br><span class="line">invalidateSize( &lt;Boolean&gt; options?, &lt;zoom/pan options&gt; options? )	this	检查地图容器的大小是否改变并更新地图，如果是这样的话，在动态改变地图大小后调用，如果animate是<span class="literal">true</span>的话，对地图进行更新.</span><br><span class="line">setMaxBounds( &lt;LatLngBounds&gt; bounds, &lt;zoom/pan options&gt; options? )	this	将地图限定在给定的边界内 (map maxBounds).</span><br><span class="line">locate( &lt;Locate options&gt; options? )	this	用地理定位接口Geolocation API获取用户位置信息，在成功定位或定位出错产生locationerror后解除location-found事件与定位数据，且将地图视图设定到检测的确切的用户的位置（如果定位失败则回到地域视图）。在Locate options中有更多详细内容。</span><br><span class="line">stopLocate()	this	Stops watching location previously initiated by map.locate(&#123;watch: <span class="literal">true</span>&#125;) and aborts resetting the map view <span class="keyword">if</span> map.locate was called with &#123;setView: <span class="literal">true</span>&#125;.</span><br><span class="line">remove()	this	Destroys the map and clears all related event listeners.</span><br></pre></td></tr></table></figure>
+<h3 id="获取地图状态"><a href="#获取地图状态" class="headerlink" title="获取地图状态"></a>获取地图状态</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">方法	返回值	描述</span><br><span class="line">getCenter()	LatLng	返回地图视图的地理中心.</span><br><span class="line">getZoom()	Number	获取地图视图现在所处的缩放级别.</span><br><span class="line">getMinZoom()	Number	返回地图最小的缩放级别.</span><br><span class="line">getMaxZoom()	Number	返回地图最大的缩放级别.</span><br><span class="line">getBounds()	LatLngBounds	返回地图视图的经纬度边界.</span><br><span class="line">getBoundsZoom( &lt;LatLngBounds&gt; bounds, &lt;Boolean&gt; inside? )	Number	返回适应整个地图视图边界的最大缩放级别。如果inside的设置时<span class="literal">true</span>，这个方法返回适应整个地图视图边界的最小缩放级别.</span><br><span class="line">getSize()	Point	返回现有地图容器的大小.</span><br><span class="line">getPixelBounds()	Bounds	返回地图视图在像素投影坐标系下的边界。（很多时候对用户自定义图层和叠加很有用）.</span><br><span class="line">getPixelOrigin()	Point	返回地图图层像素投影坐标系下的左上角的点。（很多时候对用户自定义图层和叠加很有用）.</span><br><span class="line">``` </span><br><span class="line"><span class="comment">### 图层控制/h3&gt;</span></span><br><span class="line">``` bash</span><br><span class="line">方法	返回值	描述</span><br><span class="line">addLayer( &lt;ILayer&gt; layer, &lt;Boolean&gt; insertAtTheBottom? )	this	将图层添加到地图上。如果insertAtTheBottom的选项为<span class="literal">true</span>，图层添加时在所以图层之下。（在切换基底图时比较有用）.</span><br><span class="line">removeLayer( &lt;ILayer&gt; layer )	this	将图层在地图上移除.</span><br><span class="line">hasLayer( &lt;ILayer&gt; layer )	Boolean	如果添加的图层是当前图层则返回<span class="literal">true</span>.</span><br><span class="line">openPopup( &lt;Popup&gt; popup )	this	当关闭前一个弹出框时弹出指定的对话框。（确定在同一时间只有一个打开并可用）.</span><br><span class="line">openPopup( &lt;String&gt; html | &lt;HTMLElement&gt; el, &lt;LatLng&gt; latlng, &lt;Popup options&gt; options? )	this	Creates a popup with the specified options and opens it <span class="keyword">in</span> the given point on a map.</span><br><span class="line">closePopup( &lt;Popup&gt; popup? )	this	关闭openPopup打开的弹出框.</span><br><span class="line">addControl( &lt;IControl&gt; control )	this	在地图上添加控制选项.</span><br><span class="line">removeControl( &lt;IControl&gt; control )	this	在地图上移除控制选项.</span><br></pre></td></tr></table></figure>
+<h3 id="转换方法"><a href="#转换方法" class="headerlink" title="转换方法"></a>转换方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">方法	返回值	描述</span><br><span class="line">latLngToLayerPoint( &lt;LatLng&gt; latlng )	Point	返回地图图层上与地理坐标相一致的点。（在地图上进行位置叠加时比较有用）.</span><br><span class="line">layerPointToLatLng( &lt;Point&gt; point )	LatLng	返回给定地图上点的地理坐标系.</span><br><span class="line">containerPointToLayerPoint( &lt;Point&gt; point )	Point	将于地图容器相关的点转换为地图图层相关的点.</span><br><span class="line">layerPointToContainerPoint( &lt;Point&gt; point )	Point	将地图图层相关的点转换为地图容器相关的点.</span><br><span class="line">latLngToContainerPoint( &lt;LatLng&gt; latlng )	Point	返回与给定地理坐标系相符的地图容器的点.</span><br><span class="line">containerPointToLatLng( &lt;Point&gt; point )	LatLng	返回给定地理容器点的地理坐标.</span><br><span class="line">project( &lt;LatLng&gt; latlng, &lt;Number&gt; zoom? )	Point	将地理坐标投影到指定缩放级别的像素坐标系中.</span><br><span class="line">unproject( &lt;Point&gt; point, &lt;Number&gt; zoom? )	LatLng	将像素坐标系投影到指定缩放级别的地理坐标系中。（默认为当前的缩放级别）.</span><br><span class="line">mouseEventToContainerPoint( &lt;MouseEvent&gt; event )	Point	返回鼠标点击事件对象的像素坐标（与地图左上角相关）.</span><br><span class="line">mouseEventToLayerPoint( &lt;MouseEvent&gt; event )	Point	返回鼠标点击事件对象的像素坐标（与地图图层相关）.</span><br><span class="line">mouseEventToLatLng( &lt;MouseEvent&gt; event )	LatLng	返回鼠标点击事件对象的地理坐标.</span><br><span class="line">``` </span><br><span class="line"><span class="comment">### 其他方法</span></span><br><span class="line">``` bash</span><br><span class="line">方法	返回值	描述</span><br><span class="line">getContainer()	HTMLElement	返回地图容器对象.</span><br><span class="line">getPanes()	MapPanes	返回不同地图对象的边框（叠加渲染).</span><br><span class="line">whenReady( &lt;Function&gt; fn, &lt;Object&gt; context? )	this	当地图的位置和缩放初始化好或是时间发生之后，运行给定的回调方法，通常传递一个函数内容.</span><br></pre></td></tr></table></figure>
+<h3 id="位置选项"><a href="#位置选项" class="headerlink" title="位置选项"></a>位置选项</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">选项	类型	默认值	描述</span><br><span class="line">watch	Boolean	<span class="literal">false</span>	如果该值为真，则开始利用W3C的watchPosition方法监听位置变化情况（而不是指监听一次）。你可以通过map.stoplocate()方法来停止监听.</span><br><span class="line">setView	Boolean	<span class="literal">false</span>	如果该值为真，则通过自动将地图视图定位到用户一定精度范围内的位置，如果地理定位失败则显示全部地图.</span><br><span class="line">maxZoom	Number	Infinity	在使用setView选项时视图缩放的最大级别.</span><br><span class="line">timeout	Number	10000	在触发locationerror事件之前等待地理定位的毫秒为单位的时间.</span><br><span class="line">maximumAge	Number	0	位置监听的最大生命周期。如果比最后定位回复后毫秒用时短，则locate返回一个缓存位置.</span><br><span class="line">enableHighAccuracy	Boolean	<span class="literal">false</span>	开启高精度，参加 W3C SPEC的描述.</span><br><span class="line">Zoom/pan options</span><br><span class="line">选项	类型	默认值	描述</span><br><span class="line">reset	Boolean	<span class="literal">false</span>	If <span class="literal">true</span>, the map view will be completely reset (without any animations).</span><br><span class="line">pan	pan options	-	Sets the options <span class="keyword">for</span> the panning (without the zoom change) <span class="keyword">if</span> it occurs.</span><br><span class="line">zoom	zoom options	-	Sets the options <span class="keyword">for</span> the zoom change <span class="keyword">if</span> it occurs.</span><br><span class="line">animate	Boolean	-	An equivalent of passing animate to both zoom and pan options (see below).</span><br><span class="line">Pan options</span><br><span class="line">选项	类型	默认值	描述</span><br><span class="line">animate	Boolean	-	If <span class="literal">true</span>, panning will always be animated <span class="keyword">if</span> possible. If <span class="literal">false</span>, it will not animate panning, either resetting the map view <span class="keyword">if</span> panning more than a screen away, or just setting a new offset <span class="keyword">for</span> the map pane (except <span class="keyword">for</span> `panBy` <span class="built_in">which</span> always does the latter).</span><br><span class="line">duration	Number	0.25	Duration of animated panning.</span><br><span class="line">easeLinearity	Number	0.25	The curvature factor of panning animation easing (third parameter of the Cubic Bezier curve). 1.0 means linear animation, the less the more bowed the curve.</span><br><span class="line">noMoveStart	Boolean	<span class="literal">false</span>	If <span class="literal">true</span>, panning won<span class="string">'t fire movestart event on start (used internally for panning inertia).</span></span><br></pre></td></tr></table></figure>
+<h3 id="Zoom-options"><a href="#Zoom-options" class="headerlink" title="Zoom options"></a>Zoom options</h3><p>选项    类型    默认值    描述<br>animate    Boolean    -    If not specified, zoom animation will happen if the zoom origin is inside the current view. If true, the map will attempt animating zoom disregarding where zoom origin is. Setting false will make it always reset the view completely without animation.<br>fitBounds options<br>The same as zoom/pan options and additionally:</p>
+<p>选项    类型    默认值    描述<br>paddingTopLeft    Point    [0,0]    Sets the amount of padding in the top left corner of a map container that shouldn’t be accounted for when setting the view to fit bounds. Useful if you have some control overlays on the map like a sidebar and you don’t want them to obscure objects you’re zooming to.<br>paddingBottomRight    Point    [0,0]    The same for bottom right corner of the map.<br>padding    Point    [0,0]    Equivalent of setting both top left and bottom right padding to the same value.</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">M地图属性包括互动操作，允许你在运行环境中互动地控制地图行为，比如通过拖拽和点击缩放级别显示和不显示某要素. Example:</span><br><span class="line"></span><br><span class="line">map.doubleClickZoom.disable();</span><br><span class="line">You can also access default map controls like attribution control through map properties:</span><br><span class="line"></span><br><span class="line">map.attributionControl.addAttribution(<span class="string">"Earthquake data &amp;copy; GeoNames"</span>);</span><br><span class="line">Property	类型	描述</span><br><span class="line">dragging	IHandler	地图拖拽处理程序，可以通过鼠标和触摸的形式.</span><br><span class="line">touchZoom	IHandler	触摸地图缩放处理程序.</span><br><span class="line">doubleClickZoom	IHandler	双击缩放处理程序.</span><br><span class="line">scrollWheelZoom	IHandler	滚动缩放处理程序.</span><br><span class="line">boxZoom	IHandler	矩形框（利用鼠标拖动）缩放处理程序.</span><br><span class="line">keyboard	IHandler	键盘导向处理程序.</span><br><span class="line">tap	IHandler	Mobile touch hacks (quick tap and touch hold) handler.</span><br><span class="line">zoomControl	Control.Zoom	缩放控制.</span><br><span class="line">attributionControl	Control.Attribution	属性控制.</span><br></pre></td></tr></table></figure>
+<h3 id="地图窗口"><a href="#地图窗口" class="headerlink" title="地图窗口"></a>地图窗口</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">望文思义，这是一个包括可以用来放置自定义图层的不同的地图窗口的对象。最大的区别是图层的叠置.</span><br><span class="line"></span><br><span class="line">Property	类型	描述</span><br><span class="line">mapPane	HTMLElement	包含其他地图窗口的窗口.</span><br><span class="line">tilePane	HTMLElement	切片图层的窗口.</span><br><span class="line">objectsPane	HTMLElement	包含除切片窗口以外所有窗口的窗口.</span><br><span class="line">shadowPane	HTMLElement	用来隐藏图层的窗口（如标注的隐藏）.</span><br><span class="line">overlayPane	HTMLElement	这线段和多边形一类图层的窗口.</span><br><span class="line">markerPane	HTMLElement	标注图标的窗口.</span><br><span class="line">popupPane	HTMLElement	弹出的窗口.</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/03/FIRST/" data-id="cjp74drey0001bcum9nwq65u4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/02/hello-world/" class="article-date">
+  <time datetime="2018-12-02T14:22:24.262Z" itemprop="datePublished">2018-12-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/02/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/02/hello-world/" data-id="cjp74dre90000bcum2j0txkeq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/03/FIRST/">leaflet API</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/02/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="/ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <script src="fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="js/script.js"></script>
+
+  </div>
+</body>
+</html>
